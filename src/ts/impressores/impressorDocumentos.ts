@@ -9,7 +9,7 @@ export default class ImpressorDocumentos implements Impressor {
     constructor(documentos: Documento[]) {
         this.documentos = documentos
     }
-
+    
     imprimir(): string {
         let impressao = ``
         for (let index = 0; index < this.documentos.length; index++) {
@@ -19,7 +19,6 @@ export default class ImpressorDocumentos implements Impressor {
             } else {
                 impressao = impressao + `\n${this.impressor.imprimir()}`
             }
-
         }
         return impressao
     }

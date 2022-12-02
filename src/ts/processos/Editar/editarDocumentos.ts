@@ -10,20 +10,20 @@ export default class EditarDocumento extends Processo {
   }
   processar() {
     console.clear();
-    console.log(`Lista Rapida dos Documentos`);
+    console.log(`Lista dos Documentos`);
     this.cliente.Documentos.forEach((i) => {
       console.log(`------------------------------`);
-      console.log(`|  Documento tipo: ${i.Tipo}`);
-      console.log(`|  Documento numb: ${i.Numero}`);
+      console.log(`|  Tipo do documento: ${i.Tipo}`);
+      console.log(`|  Número do documento: ${i.Numero}`);
       console.log(`------------------------------`);
     });
-    let documento = this.entrada.receberTexto("Digite o numero do documento: ");
+    let documento = this.entrada.receberTexto("Digite o número do documento: ");
     this.cliente.Documentos.filter((doc) => doc.Numero == documento).forEach(
       (novo) => {
         let novoNumero = this.entrada.receberTexto(
-          "Novo numero do documento: "
+          "Nùmero atualizado do documento: "
         );
-        let novaData = this.entrada.receberData("Nova data do documento ");
+        let novaData = this.entrada.receberData("Nova data de expedição do documento: ");
         novo.Numero = novoNumero;
         novo.DataExpedicao = novaData;
       }

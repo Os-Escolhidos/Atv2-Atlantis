@@ -15,5 +15,4 @@ export default class ImpressorDocumento implements Impressor {
             + `| Número: ${this.documento.Numero}`
         return impressao
     }
-
 }

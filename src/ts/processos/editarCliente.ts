@@ -23,7 +23,7 @@ export default class EditarCliente extends Processo {
   processar(): void {
     console.clear();
     let clienteCPF = this.entrada.receberTexto(
-      "Para começar a editar o cliente, forneça o CPF: "
+      "Para começar a editar o cliente, digite o CPF: "
     );
     this.clientes.forEach((clienteForEach) => {
       clienteForEach.Documentos.filter((clienteDocFilter) => {
@@ -78,7 +78,7 @@ export default class EditarCliente extends Processo {
                 console.clear();
                 break;
               default:
-                console.log("Opção não entendida .·´¯`(>▂<)´¯`·. ");
+                console.log("Opção não entendida :(");
             }
           }
         }

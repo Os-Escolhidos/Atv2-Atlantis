@@ -10,12 +10,12 @@ export default class EditarEndereco extends Processo {
     this.cliente = cliente;
   }
   processar() {
-    let rua = this.entrada.receberTexto("Qual a nova rua?");
-    let bairro = this.entrada.receberTexto("Qual o novo bairro?");
-    let cidade = this.entrada.receberTexto("Qual a nova cidade?");
-    let estado = this.entrada.receberTexto("Qual o novo estado?");
-    let pais = this.entrada.receberTexto("Qual o novo país?");
-    let codigoPostal = this.entrada.receberTexto("Qual o novo código postal?");
+    let rua = this.entrada.receberTexto("Digite o nome da rua?");
+    let bairro = this.entrada.receberTexto("Digite o nome do bairro?");
+    let cidade = this.entrada.receberTexto("Digite o nome da cidade?");
+    let estado = this.entrada.receberTexto("Digite o nome do estado?");
+    let pais = this.entrada.receberTexto("Digite o nome do país?");
+    let codigoPostal = this.entrada.receberTexto("Digite o código postal?");
     this.cliente.Endereco.Bairro = bairro;
     this.cliente.Endereco.Rua = rua;
     this.cliente.Endereco.Cidade = cidade;

@@ -9,7 +9,7 @@ export default class EditarDataDeNascimento extends Processo {
     this.cliente = cliente;
   }
   processar() {
-    let DataDeNascimento = this.entrada.receberData("Digite o novo Nome: ");
+    let DataDeNascimento = this.entrada.receberData("Digite a data de nascimento: ");
     this.cliente.DataNascimento = DataDeNascimento;
   }
 }

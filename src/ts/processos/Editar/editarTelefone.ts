@@ -9,21 +9,21 @@ export default class EditarNumero extends Processo {
   }
   processar() {
     console.clear();
-    console.log(`Lista Rapida dos Telefones`);
+    console.log(`Lista dos Telefones`);
     this.cliente.Telefones.forEach((i) => {
       console.log(`------------------------------`);
       console.log(`|  Telefone: ${i.Ddd} - ${i.Numero} `);
       console.log(`------------------------------`);
     });
     let telefoneAlvo = this.entrada.receberTexto(
-      "Digite o numero do telefone no formato -> DDD NUMERO : "
+      "Digite o numero do telefone no formato 'DDD NÚMERO' : "
     );
     let partesTell = telefoneAlvo.split(" ");
     this.cliente.Telefones.filter(
       (tell) => tell.Numero == partesTell[1] && tell.Ddd === partesTell[0]
     ).forEach((novo) => {
       let tell = this.entrada.receberTexto(
-        `Por favor digite o numero do telefone no padrão DDD NUMERO:`
+        `Por favor digite o número do telefone no padrão DDD NÚMERO:`
       );
       let partesTell = tell.split(" ");
       novo.Ddd = new String(partesTell[0].valueOf()).valueOf();

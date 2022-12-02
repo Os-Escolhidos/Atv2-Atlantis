@@ -9,7 +9,7 @@ export default class EditarNome extends Processo {
     this.cliente = cliente;
   }
   processar() {
-    let novoNome = this.entrada.receberTexto("Digite o novo Nome: ");
+    let novoNome = this.entrada.receberTexto("Digite o Nome: ");
     this.cliente.Nome = novoNome;
   }
 }

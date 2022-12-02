@@ -1,5 +1,6 @@
 import Processo from "../abstracoes/processo";
-import MenuTelefone from "../menus/menuTelefone";
+import MenuTipoCadastroTelefone from "../menus/menuTipoCadastroTelefone";
+import MenuTelefone from "../menus/menuTipoCadastroTelefone";
 import Cliente from "../modelos/cliente";
 import Telefone from "../modelos/telefone";
 
@@ -8,7 +9,7 @@ export default class CadastrarTelefones extends Processo {
     constructor(cliente: Cliente) {
         super()
         this.cliente = cliente
-        this.menu = new MenuTelefone()
+        this.menu = new MenuTipoCadastroTelefone()
         this.execucao = true
     }
 

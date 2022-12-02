@@ -8,8 +8,8 @@ import CadastrarTelefones from "./cadastroTelefones";
 export default class CadastroClienteTitular extends Processo {
     processar(): void {
         console.log('Iniciando o cadastro de um novo cliente...')
-        let nome = this.entrada.receberTexto('Qual o nome do novo cliente?')
-        let nomeSocial = this.entrada.receberTexto('Qual o nome social do novo cliente?')
+        let nome = this.entrada.receberTexto('Qual o nome do cliente?')
+        let nomeSocial = this.entrada.receberTexto('Qual o nome social do cliente?')
         let dataNascimento = this.entrada.receberData('Qual a data de nascimento?')
         let cliente = new Cliente(nome, nomeSocial, dataNascimento)
 
@@ -21,8 +21,6 @@ export default class CadastroClienteTitular extends Processo {
 
         this.processo = new CadastrarTelefones(cliente)
         this.processo.processar
-
-
         
         let armazem = Armazem.InstanciaUnica
         armazem.Clientes.push(cliente)
