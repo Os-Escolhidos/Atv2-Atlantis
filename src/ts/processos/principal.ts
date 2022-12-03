@@ -20,7 +20,7 @@ export default class Principal extends Processo {
                 this.processo.processar()
                 break
             case 2:
-                this.processo = new TipoEditarCliente
+                this.processo = new TipoEditarCliente()
                 this.processo.processar()
                 break
             case 3:

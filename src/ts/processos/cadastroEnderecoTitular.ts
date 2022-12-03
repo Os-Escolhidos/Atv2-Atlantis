@@ -21,5 +21,4 @@ export default class CadastroEnderecoTitular extends Processo {
         let endereco = new Endereco(rua,bairro,cidade,estado,pais,codigoPostal)
         this.cliente.Endereco = endereco
     }
-
 }

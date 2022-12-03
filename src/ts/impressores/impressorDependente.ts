@@ -3,7 +3,7 @@ import Cliente from "../modelos/cliente";
 import ImpressorDocumentos from "./impressorDocumentos";
 import ImpressorEndereco from "./impressorEndereco";
 
-export default class ImpressaorDepedente implements Impressor {
+export default class ImpressorDepedente implements Impressor {
   private cliente: Cliente;
   private impressor!: Impressor;
   constructor(cliente: Cliente) {

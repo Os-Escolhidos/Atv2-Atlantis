@@ -36,6 +36,4 @@ export default class Cliente {
     public set NomeSocial(nomeSocial: string) { this.NomeSocial = nomeSocial }
     public set Telefones(telefones: Telefone[]) { this.Telefones = telefones }
     public set Documentos(documentos: Documento[]) { this.Documentos = documentos }
-    public set Dependentes(dependentes: Cliente[]) { this.Dependentes = dependentes }
-    public set Titular(titular: Cliente) { this.Titular = titular }
 }

@@ -1,6 +1,5 @@
 import Processo from "../abstracoes/processo";
 import MenuTipoCadastroTelefone from "../menus/menuTipoCadastroTelefone";
-import MenuTelefone from "../menus/menuTipoCadastroTelefone";
 import Cliente from "../modelos/cliente";
 import Telefone from "../modelos/telefone";
 

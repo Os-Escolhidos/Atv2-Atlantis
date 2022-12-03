@@ -3,7 +3,6 @@ import Armazem from "../dominio/armazem";
 import Cliente from "../modelos/cliente";
 import Endereco from "../modelos/endereco";
 import CadastrarDocumentosCliente from "./cadastrarDocumentosCliente";
-import CadastroEnderecoTitular from "./cadastroEnderecoTitular";
 import CadastrarTelefones from "./cadastroTelefones";
 
 export default class CadastroClienteDependente extends Processo { 
@@ -12,6 +11,7 @@ export default class CadastroClienteDependente extends Processo {
     constructor(){
         super();
         this.cliente = Armazem.InstanciaUnica.Clientes;
+        this.execucao = true
     }
     
     processar(): void {

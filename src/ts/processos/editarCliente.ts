@@ -78,7 +78,7 @@ export default class EditarCliente extends Processo {
                 console.clear();
                 break;
               default:
-                console.log("Opção não entendida :(");
+                console.log("Opção não compreendida :(");
             }
           }
         }
